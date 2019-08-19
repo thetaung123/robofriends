@@ -1,8 +1,7 @@
 import React from 'react';
 import Card from "./Card";
-import {robots} from "./robots";
 
-const CardList = () => {
+const CardList = ({robots}) => { //calling props from app
     return (<div>
         {  robots.map((users,i)=>{
             return (<Card
